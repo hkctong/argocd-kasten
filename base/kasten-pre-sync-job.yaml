@@ -34,6 +34,9 @@ spec:
                subject:
                  name: $NAMESPACE
                  namespace: $NAMESPACE
+               profile:
+                 name: azure-profile-kmxl7
+                 namespace: kasten-io
              EOF
             
              # Wait until the backup action is complete 

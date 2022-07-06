@@ -35,7 +35,7 @@ spec:
                  name: $NAMESPACE
                  namespace: $NAMESPACE
                profile:
-                 name: azure-profile-kmxl7
+                 name: k10blob
                  namespace: kasten-io
              EOF
             

@@ -34,9 +34,6 @@ spec:
                subject:
                  name: $NAMESPACE
                  namespace: $NAMESPACE
-               profile:
-                 name: k10blob
-                 namespace: kasten-io
              EOF
             
              # Wait until the backup action is complete 

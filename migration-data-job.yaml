@@ -20,7 +20,6 @@ spec:
           # mysql -h mysql -p\${MYSQL_ROOT_PASSWORD} -uroot -Bse "delete from test.pets"
           # mysql -h mysql -p\${MYSQL_ROOT_PASSWORD} -uroot -Bse "delete from test.pets where species in \${SPECIES}" 
           # Test2
-          #Test3
           mysql -h mysql --password=${MYSQL_ROOT_PASSWORD} -u root -e "delete from test.pets"
         env:
         - name: MYSQL_ROOT_PASSWORD

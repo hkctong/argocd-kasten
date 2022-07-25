@@ -6,9 +6,8 @@ metadata:
     argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/sync-wave: "1"
   labels:
-    name: "app.kubernetes.io/name=petclinic"
+    app.kubernetes.io/name: petclinic
     environment: production
-    app: mysql
 spec:
   template:
     metadata:

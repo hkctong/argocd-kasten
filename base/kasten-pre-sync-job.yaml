@@ -6,8 +6,9 @@ metadata:
     argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/sync-wave: "1"
   labels:
+    name: petclinic
     environment: production
-    app: petclinic
+    app: mysql
 spec:
   template:
     metadata:

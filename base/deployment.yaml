@@ -1,7 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mysql  
+  name: mysql
+  labels:
+    dataprotection: k10-mysql  
 spec:
   selector:
     matchLabels:
@@ -11,7 +13,6 @@ spec:
     metadata:
       labels:
         app: mysql
-        dataprotection: k10-mysql
     spec:
       containers:
       - name: mysql

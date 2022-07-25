@@ -5,12 +5,12 @@ metadata:
   annotations:
     argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/sync-wave: "1"
-  labels:
-    app.kubernetes.io/name: petclinic
 spec:
   template:
     metadata:
       creationTimestamp: null
+    labels: 
+      app.kubernetes.io/name: petclinic
     spec:
       serviceAccountName: kasten-pre-sync
       containers:

@@ -7,7 +7,6 @@ metadata:
     argocd.argoproj.io/sync-wave: "1"
   labels:
     app.kubernetes.io/name: petclinic
-    environment: production
 spec:
   template:
     metadata:

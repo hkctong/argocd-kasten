@@ -12,6 +12,7 @@ spec:
     spec:
       serviceAccountName: kasten-pre-sync
       containers:
+       - labels: app.kubernetes.io/name=petclinic
        - image: ghcr.io/kanisterio/kanister-kubectl:1.18
          command:
            - sh
